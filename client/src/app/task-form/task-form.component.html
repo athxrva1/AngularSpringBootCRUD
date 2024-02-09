@@ -1,0 +1,15 @@
+<!-- task-form.component.html -->
+
+<h2>Add Task</h2>
+<form (submit)="onSubmit()">
+  <label for="title">Title:</label>
+  <input id="title" name="title" [(ngModel)]="newTask.title" required>
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" [(ngModel)]="newTask.description" required></textarea>
+
+  <label for="taskStatus">Task Status:</label>
+  <input id="taskStatus" name="taskStatus" [(ngModel)]="newTask.taskStatus" required>
+
+  <button type="submit">Add Task</button>
+</form>

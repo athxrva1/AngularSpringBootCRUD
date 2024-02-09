@@ -1,0 +1,10 @@
+<!-- task-details.component.html -->
+
+<div *ngIf="task">
+    <h2>Task Details</h2>
+    <p>Title: {{ task.title }}</p>
+    <p>Description: {{ task.description }}</p>
+    <p>Status: {{ task.taskStatus }}</p>
+    <p>Date Added: {{ task.dateAdded | date }}</p>
+  </div>
+  
